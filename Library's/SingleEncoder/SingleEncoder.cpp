@@ -34,8 +34,6 @@ SingleEncoder::SingleEncoder(uint8_t interrupt1, uint8_t interrupt2, uint8_t ana
 	anaPinB = analog2;
 	pinMode(intPinA, INPUT);
 	pinMode(intPinB, INPUT);
-	//pinMode(anaPinA, INPUT);
-	//pinMode(anaPinB, INPUT);
 	attachInterrupt(0, updateEnc1, CHANGE); 
 	attachInterrupt(1, updateEnc2, CHANGE);
 	init_Timer();	
@@ -66,7 +64,7 @@ ISR(TIMER2_COMPA_vect){ //wordt elke 2ms getriggerd --> per += 100 ms rpm lezen
    }
   lastEncPos[3] = read4;
   if(counter>50){
-  long timeNow = millis();
+	long timeNow = millis();
 	for(int i = 0; i<4;i++){
 		rpmPos[i] = ((encPos[i]-lastPos[i])*((float)(60000/(timeNow-lastTime))))/tics;
 	}

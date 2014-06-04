@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MecrobControl</string>
+    <string name="str_menu_info">Info</string>
+    <string name="str_speed">Speed</string>
+    <string name="dim">100dp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_device_scan">DeviceScanActivity</string>
+    <string name="title_activity_device_control">DeviceControlActivity</string>
+    <string name="alert_dialog_no_bt">Deze app kan niet worden gestart zonder BlueTooth</string>
+    <string name="alert_dialog_yes">Ja</string>
+    <string name="alert_dialog_no">Nee</string>
+    <string name="alert_dialog_warning_title">Warning</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_turn_on_bt">Deze app heeft BlueTooth nodig. BlueTooth aanzetten?</string>
+    <string name="toast_connected_to">Geconnecteerd met </string>
+    <string name="toast_unable_to_connect">Onmogelijk om te connecteren</string>
+    <string name="toast_connection_lost">De connectie is verloren gegaan</string>
+    <string name="toast_connecting">Aan het connecteren...</string>
+    <string name="not_connected">Niet geconnecteerd</string>
+    <string name="title_connecting">Connecteren...</string>
+    <string name="title_connected_to">Geconnecteerd: </string>
+    <string name="title_not_connected">Niet geconnecteerd</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">aan het scannen voor apparaten</string>
+    <string name="select_device">selecteer een apparaat</string>
+    <string name="none_paired">Geen apparaten zijn gepaard</string>
+    <string name="none_found">geen apparaten gevonden</string>
+    <string name="title_paired_devices">gepaarde apparaten</string>
+    <string name="title_other_devices">Andere beschikbare apparaten</string>
+    <string name="button_scan">Scan voor apparaten</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Verbind apparaat</string>
+    <string name="disconnect">Disconnect apparaat</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

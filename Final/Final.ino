@@ -24,24 +24,25 @@ unsigned long currentTime;
 unsigned long loopTime;
 
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("Finale Test ");
   loopTime = currentTime;
-  rover.startEngine(SPEED_MED);
+  //rover.startEngine();
 }
 
 void loop(){
    currentTime = millis();
-  if(currentTime >= (loopTime + 2000)){
-    long* a= enc.readEnc();
-    int* b = rover.getPower();
-    unsigned int k[4] = {1,2,3,4};
-    float* d = enc.readRPM();
-    for(int i = 0; i<4;i++){
-      Serial.print("Enc");Serial.print(i+1);Serial.print(" : ");Serial.print(a[i]);Serial.print(" - ");Serial.print(b[i]);Serial.print(" - ");Serial.print(d[i]);Serial.print("|");
-    }     
-    Serial.println();
-    loopTime = currentTime; 
-    readInstructions();
+   if(currentTime >= (loopTime + 2000)){
+     long* a= enc.readEnc();
+     int* b = rover.getPower();
+     unsigned int k[4] = {1,2,3,4};
+     float* d = enc.readRPM();
+     for(int i = 0; i<4;i++){
+       // Enc : encPos - Power - RPM
+       Serial.print("Enc");Serial.print(i+1);Serial.print(" : ");Serial.print(a[i]);Serial.print(" - ");Serial.print(b[i]);Serial.print(" - ");Serial.print(d[i]);Serial.print("|");
+     }     
+     Serial.println();
+     loopTime = currentTime; 
   }
+  readInstructions();
 }

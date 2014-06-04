@@ -1,0 +1,137 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:context="be.pxl.mecrobcontrol.ble.ControlActivity">
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_speed"
+            android:textSize="55dp"
+            android:layout_span="1"
+            android:id="@+id/txtSpeed"
+            android:layout_column="5" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dip"/>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="100dp">
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skbSpeed"
+            android:layout_column="3"
+            android:layout_span="5"
+            android:max="2"
+            android:progress="0"
+            android:indeterminate="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="150dip"/>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↖"
+                android:id="@+id/btnDiagUpLeft"
+                android:layout_column="4" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↑"
+                android:id="@+id/btnForward"
+                android:layout_column="5"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↗"
+                android:id="@+id/btnDiagUpRight"
+                android:layout_column="6" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↺"
+                android:id="@+id/btnCW"
+                android:layout_column="3" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="←"
+                android:id="@+id/btnStrafeLeft"
+                android:layout_column="4" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Start"
+                android:id="@+id/btnGo"
+                android:layout_column="5" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="→"
+                android:id="@+id/btnStrafeRight"
+                android:layout_column="6" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↻"
+                android:id="@+id/btnCCW"
+                android:layout_column="7" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↙"
+                android:id="@+id/btnDiagDownLeft"
+                android:layout_column="4" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↓"
+                android:id="@+id/btnBack"
+                android:layout_column="5" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="↘"
+                android:id="@+id/btnDiagDownRight"
+                android:layout_column="6" />
+        </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="200dip"/>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/imgPxl"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_pxl"
+            android:layout_span="8"
+            />
+        </TableRow>
+</TableLayout>
